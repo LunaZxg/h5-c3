@@ -1,0 +1,310 @@
+/*css样式初始化*/
+* {
+	margin: 0;
+	padding: 0;
+}
+ul {
+	list-style: none;
+}
+a {
+	text-decoration: none;
+}
+.clearfix:after {
+	content: ".";
+	height: 0;
+	display: block;
+	visibility: hidden;
+	clear: both;
+}
+.clearfix {
+	*zoom: 1;
+}
+.w {
+	width: 1000px;
+	margin: 0 auto;
+}
+header {
+	width: 100%;
+	background-color: #313945;
+	border-bottom: 4px solid #1A7FB7;
+}
+.header-in {
+	height: 92px;
+}
+.header-in .logo {
+	width: 214px;
+	height: 92px;
+	float: left;
+}
+.header-in ul {
+	float: right;
+}
+.header-in ul li {
+	float: left;
+}
+.header-in ul li a {
+	display: block;
+	padding: 0 34px;
+	line-height: 92px;
+	text-align: center;
+	color: #fff;
+}
+.header-in ul li a:hover {
+	background-color: #2FA3E3;
+}
+/*banner start*/
+.banner {
+	width: 100%;
+	height: 467px;
+	background: url(../images/banner_02.png) no-repeat;
+	border-bottom:  3px solid #2591CD;
+}
+/*new activity start*/
+.newact {
+	background-color: #2FA3E3;
+	border-bottom:  2px solid #1A7FB7;
+}
+.newact-in {
+	height: 455px;
+	text-align: center;
+	overflow: hidden;
+	position: relative;
+}
+.newact-in h4,
+.newact-in p,
+.newact-in a,
+.land-in .lands h2,
+.land-in .lands p,
+.spe .plan h2,
+.spe .plan p,
+.f-t-in dl dt,
+.f-t-in dl dd {
+	color: #fff;
+	font-family: "微软雅黑";
+	font-weight: normal;
+	 
+}
+.newact-in h4 {
+	font-size: 48px;
+	margin-top: 62px;
+}
+.newact-in p {
+	line-height: 28px;
+	font-size: 24px;
+	margin-top: 80px;
+}
+.newact-in a {
+	position: absolute;
+	left: 50%;
+	margin-left: -116px;
+	bottom:38px;
+	width: 232px;
+	line-height: 60px;
+	text-align: center;
+	font-size: 26px;
+	background-color: #197FB7;
+
+}
+/*land start*/
+.land {
+	/*background-color: #f45;*/
+}
+.land-in {
+	height: 430px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.land-in .lands {
+	flex:1;
+	width: 315px;
+	height: 340px;
+	text-align: center;
+	position: relative;	
+}
+.land-in .lands h2 {
+	margin-top: 144px;
+	font-size: 20px;
+	color:#2FA3E3;
+}
+.land-in .lands p {
+	line-height: 24px;
+	color: #888;
+	font-size: 18px;
+}
+.land-in .lands a {
+	position: absolute;
+	bottom: 0;
+	left:50%;
+	margin-left: -46px;
+	width: 92px;
+	line-height: 35px;
+	background-color: #2FA3E3;
+	color:#fff;
+}
+.land-in .lands:nth-child(1) {
+	background: url(../images/land1_03.png) no-repeat;
+
+}
+.land-in .lands:nth-child(2) {
+	background: url(../images/land2_03.png) no-repeat;
+	margin: 0 22px;
+}
+.land-in .lands:nth-child(3) {
+	background: url(../images/land3_03.png) no-repeat;
+}
+/*trip special start*/
+.trip {
+	background-color: #E9F6FD;
+	overflow: hidden;
+}
+.trip .row {
+	height: 0;
+	width: 100%;
+	border: 1px solid #ccc;
+	margin-top: 48px;
+	margin-bottom: 68px;
+	position: relative;
+}
+.row .font {
+	width: 270px;
+	text-align: center;
+	line-height: 32px;
+	background-color: #E9F6FD;
+	position: absolute;
+	top: -20px;
+	left: 50%;
+	margin-left: -135px;
+	color: #838786;
+	
+
+}
+.row .font h2 {
+	font-size: 26px;
+	font-family: "微软雅黑";
+	font-weight: normal;
+}
+.row .font p {
+	font-size: 16px;
+	font-family: "微软雅黑";
+	font-weight: normal;
+}
+.trip .spe {
+	height: 314px;
+	margin-top: 32px ;
+	display: flex;
+}
+.spe .plan {
+	flex:1;
+	width: 312px;
+	height: 264px;
+	background-color: orange;
+	text-align: center;
+}
+.spe .plan h2 {
+	font-size: 24px;
+	color: #b4bdc0;
+	margin-top: 154px;
+}
+.spe .plan p {
+	line-height: 24px;
+	font-size: 14px;
+	color: #b4bdc0;
+	margin-top:15px;
+}
+.spe .plan:nth-child(1) {
+	background: url(../images/plan1_07.png) no-repeat;
+}
+.spe .plan:nth-child(2) {
+	margin: 0 24px;
+	background: url(../images/plan2_07.png) no-repeat;
+}
+.spe .plan:nth-child(3) {
+	background: url(../images/plan3_06.jpg) no-repeat;
+}
+/*footer start*/
+.f-t {
+	background-color: #323A45;
+}
+.f-t .f-t-in {
+	 height: 308px;
+	 padding: 38px 0 45px ;
+	 box-sizing:border-box;
+}
+.f-t-in dl {
+	height: 225px;
+	float: left;
+}
+.f-t-in dl:first-child {
+	width: 334px;
+}
+.f-t-in dl:first-child dd {
+	padding-left: 55px;
+}
+.f-t-in dl:nth-child(2) {
+	width: 234px;
+}
+.f-t-in dl:nth-child(2) dd {
+	padding-left: 35px;
+}
+.f-t-in dl:nth-child(3) {
+	width: 244px;
+}
+.f-t-in dl span {
+	color: #FA5A1A;
+}
+dl .weichat {
+	width: 128px;
+	height: 128px;
+	background: url(../images/weichat_09.png) no-repeat;
+}
+.f-t-in dl:nth-child(4) {
+	width: 115px;
+}
+.f-t-in dl:nth-child(4) dd {
+	line-height: 21px;
+	padding-left: 20px;
+	
+	margin-bottom: 31px;
+}
+.f-t-in dl dt {
+	font-size: 18px;
+	margin-bottom: 20px;
+}
+.f-t-in dl dd {
+	font-size: 14px;
+	line-height: 30px;
+
+}
+.f-t-in .share1 {
+	background: url(../images/footIcon.png) 0 0 no-repeat;
+}
+.f-t-in .share2 {
+	background: url(../images/footIcon.png) 0 -35px no-repeat;
+}
+.f-t-in .share3 {
+	background: url(../images/footIcon.png) 0 bottom no-repeat;
+}
+.f-b {
+	background-color: #136896;
+}
+.f-b .f-b-in {
+	height:  58px;
+	text-align: center;
+	position: relative;
+}
+.f-b-in p {
+	line-height: 29px;
+	font-family: "微软雅黑"；
+	font-size:12px;
+	color:#fff;
+}
+.f-b .f-b-in::after {
+	content: "";
+	position: absolute;
+	right: 30px;
+	top:0;
+	width: 136px;
+	height: 58px;
+	background: url(../images/logo2_09.png) no-repeat;
+}

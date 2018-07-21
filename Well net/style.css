@@ -1,0 +1,351 @@
+/*css初始化 start*/
+		* {
+			margin: 0;
+			padding: 0;
+		}
+		.clearfix {
+			content: ".";
+			display: block;
+			height: 0;
+			visibility: hidden;
+			clear: both;
+		}
+		.clearfix {
+			*zoom: 1;
+		}
+		a {
+			text-decoration: none;
+		}
+		ul li {
+			list-style: none;
+		}
+		.css {
+			box-sizing:border-box;
+		}
+		.container {
+			margin: 0 auto;
+			width: 1201px;
+		}
+		/*css初始化 end*/
+		/*body {
+			background-color: #f3f5f7;
+		}*/
+		/*header start*/
+		header {
+			background-color: #f3f5f7;
+			height: 102px;
+			/*position: relative;*/
+			overflow: hidden;
+		}
+		.nav {
+			height: 42px；/*行高给父亲 子元素会继承*/
+			width: 1365px;
+			background-color: pink;
+			/*position: absolute;
+			top: 31px;*/
+			margin:  31px auto;
+		}
+		.navbar {
+			height: 42px;/*行高给父亲，子元素会继承*/
+			line-height: 42px;
+			float: left;
+			margin-left: 54px;
+		}
+		.nav .logo {
+			float: left;
+		}
+		.navbar ul li {
+			float: left; /*让首页课程等在同一行显示*/
+		}
+		.navbar ul li a {
+			color: #050505;
+			display: inline-block;
+			padding: 0 8px;
+			font-family: "微软雅黑";
+		}
+		.navbar ul li a:hover {
+			border-bottom: 2px solid #00a4ff;
+		}	
+		/*person start*/
+		.person {
+			width: 293px;
+			height: 42px;
+			/*background-color: orange;*/
+			float: right;
+			padding: 0 15px 0 30px;
+		}
+		.person img {
+			margin:0 13px;
+		}
+		/*search start*/
+		.search {
+			width: 410px;
+			height: 42px;
+			/*line-height: 42px;*/
+			float: right;
+			
+			border:1px solid #00a4ff;
+			/*background-color: #ccc;*/
+		}
+		.search input[type=text] {
+			width: 360px;
+			height: 42px;
+			/*background-color: pink;*/
+			box-sizing:border-box;
+			padding-left: 20px;
+			float: left;
+		}
+		.search input[type=submit] {
+			width: 50px;
+			height: 42px;
+			background: #00a4ff url(images/search_06.png) center center no-repeat;
+			float: right;
+		}
+		/*bar start*/
+		.bar {
+			height: 420px;
+			background-color: #1c036c;
+		}
+		.bar .heart {
+			/*background-color: pink;*/
+			width: 1201px;
+			height: 420px;
+			margin:0 auto;
+			background: #1c036c url(images/banner_03.png) center  no-repeat;
+			position: relative;
+		}
+		.bar .heart .l {
+			/*background-color: #ccc;*/
+			width: 190px;
+			height: 420px;
+			background: rgba(0,0,0,0.3);
+			padding-left: 19px;
+			box-sizing:border-box;
+			float: left;
+		}
+		.bar .heart .l a {
+			height: 44px;
+			line-height: 44px;
+			color: white;
+		}
+		.bar .heart .l a:hover {
+			color: #00a4ff;
+		}
+		.bar .heart .l span {
+			float: right;
+		}
+		.bar .heart .r {
+			width: 229px;
+			height: 301px;
+			background-color: #fff;
+			float: right;
+			margin-top: 50px;
+		}
+		/*right start*/
+		.bar .heart .r dt {
+			height: 49px;
+			line-height: 49px;
+			color: white;
+			font-family: "微软雅黑";
+			background-color: #9bceea;
+			padding-left: 65px;
+			letter-spacing: 2px;
+			margin-bottom: 5px;
+		}
+		.bar .heart .r dd {
+			height: 59px;
+			
+			margin: 0 17px;
+			border-bottom: 1px solid #eaeaea;
+			padding-top: 12px ;
+			box-sizing:border-box;
+		}
+		.bar .heart .r h4 {
+			color: #4e4e4e;
+			font-weight: normal;
+			font-size: 16px;
+		}
+		.bar .heart .r p {
+			color: #a5a5a5;
+			font-size: 14px;
+		}
+		.bar .heart .r dd:last-child {
+			border-bottom: 0;
+		}
+		.bar .heart .r .course {
+			width: 202px;
+			height: 42px;
+			box-sizing:border-box;
+			border:1px solid #22b0ff;
+			color: #22b0ff;
+			margin:0 auto;
+			padding: 12px 64px 10px 62px;
+		}
+		.bar .heart .r .course:hover {
+			background-color: #22b0ff;
+			color: white;
+		}
+		/*小圆点*/
+		.circle {
+			width: 161px;
+			height: 13px;
+			/*background-color: #ccc;*/
+			position: absolute;
+			left: 50%;
+			margin-left: -80px;
+			bottom: 34px;
+		}
+		.circle li {
+			float: left;
+			width: 14px;
+			height: 13px;
+			border-radius: 50%;
+			margin:0 4px;
+			background: rgba(255,255,255,0.3);
+		}
+		.circle .current {
+			width: 19px;
+			background-color: #fff;
+			border-radius: 5px;
+		}
+		/*next start*/
+		.next {
+			width: 1201px;
+			height: 62px;
+			background-color: #fff;
+			box-sizing:border-box;
+			box-shadow: 7px 7px 7px rgba(0,0,0,0.3);
+			margin: 0 auto;
+			margin-top: 8px;
+
+		}
+		
+		.next  a {
+			float: left;
+			text-align: center;
+			border-right: 1px solid #bfbfbf;
+			padding: 0 20px;
+			margin: 23px 0;
+			color: #000;
+		}
+		/*.next  ul:first-child {
+			color:#22b0ff;
+		}*/
+		/*.next a:first-child {
+			color: #22b0ff;
+		}*/
+		.next a:hover {
+			color: #22b0ff;
+		}
+		.next a:first-child {
+			color: #22b0ff;
+		} 
+		.next a:last-child {
+			color: #22b0ff;
+			border-right: none;
+			float: right;
+		}
+		.recom-products {
+			/*background-color: pink;*/
+			margin-top: 40px;
+
+		}
+		.recom-hd {
+			/*background-color: pink;*/
+			height: 42px;
+			color: #494949;
+		}
+		.recom-hd a {
+			float: right;
+			color: #494949;
+
+		}
+		.recom-bd li {
+			width: 227px;
+			height: 271px;
+			margin-right: 15px;
+			margin-top: 15px;
+			/*background-color: #f3f5f7;*/
+			box-shadow: 0 2px 3px rgba(0,0,0,0.3);
+			float: left;
+			background-color: #fff;
+		}
+		.recom-bd li h4,
+		.recom-bd li p {
+			margin:0 20px;
+		}
+		.recom-bd h4 {
+			font-size: 14px;
+			width: 186px;
+			height: 42px;
+			line-height: 21px;
+			font-weight: 700;
+			margin-top: 20px;
+			color: #050505;
+		}
+		.recom-bd li p {
+			color: #999;
+			font-size: 12px;
+			margin-top: 15px;
+			
+		}
+		.recom-bd li p span {
+			color: red;
+			font-size: 12px;
+			margin-right: 3px;
+		}
+		.recom-bd li:nth-child(5n) {
+			margin-right: 0;
+		}
+		footer {
+			height: 273px;
+			background-color: #fff;
+			margin-top: 35px;
+		}
+		.fd {
+			padding-top: 30px;
+		}
+		.footer-in {
+			margin-top: 32px;
+			height: 241px;
+			float: left;
+
+		}
+		.footer-in p {
+			color: #666;
+			font-size: 12px;
+		}
+		.footer-in a {
+			width: 122px;
+			line-height: 36px;
+			display: block;
+			text-align: center;
+			font-size: 18px;
+			color: #00a4ff;
+			border:2px solid #00a4ff;
+			margin-top: 16px;
+		}
+		.footer-r {
+			float: right;
+
+			/*background-color: #ccc;*/
+		}
+		.footer-r dl {
+			padding-top: 35px;
+			width: 222px;
+			float: left;
+		}
+		.footer-r dt {
+			font-size: 16px;
+			color: #333;
+			font-family: "微软雅黑";
+			margin-bottom: 5px;
+		}
+		.footer-r dd {
+			font-size: 12px;
+			color:#333;
+			line-height: 21px; 
+		}
+		.footer-r dd a {
+			color: #000;
+		}

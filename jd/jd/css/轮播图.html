@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>轮播图</title>
+	<style>
+		div {
+			width: 790px;
+			height: 340px;
+			border: 3px solid #f08;
+			transform: rotateY(30deg);
+			transform-style: preserve-3d;
+			animation: rotateY 5s linear infinite;
+			margin: 0 auto;
+		}
+		img {
+			transform: rotateY(30deg);
+			border: 1px solid blue;
+		}
+		@keyframes rotateY {
+			0% {
+				transform: rotateY(0);
+			}
+			25% {
+				transform: rotateY(90deg);
+			}
+			50% {
+				transform: rotateY(180deg);
+			}
+			75% {
+				transform: rotateY(270deg);
+			}
+			100% {
+				transform: rotateY(360deg);
+			}
+		}
+	</style>
+</head>
+<body>
+	<div>
+		<img src="../images/banner.png" alt="">
+	</div>
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>旋转</title>
+	<style>
+		body {
+			perspective:1000px;
+		}
+		section {
+			width: 390px;
+			height: 130px;
+			margin: 100px auto;
+			background: url(../images/banner3.png) no-repeat;
+			-webkit-background-size: cover;
+			background-size: cover;
+			position: relative;
+			transform-style: preserve-3d;
+			/*transition: 5s linear;*/
+			animation: rotateY 4s linear infinite;
+		}
+		section:hover {
+			/*transform: rotateY(360deg);*/
+			animation-play-state: paused;
+		}
+		@keyframes rotateY {
+			from {
+				transform: rotateY(0deg);
+			}
+			to {
+				transform: rotateY(360deg);
+			}
+		}
+		section div {
+			width: 100%;
+			height: 100%;
+			background: url(../images/banner2.png) no-repeat;
+			-webkit-background-size: cover;
+			background-size: cover;
+			position: absolute;
+			top: 0;
+			left: 0;
+			/*animation: zhuan 4s linear infinite;*/
+		}
+		section div:nth-child(1) {
+			transform: rotateY(0deg) translateZ(400px);
+		}
+		section div:nth-child(2) {
+			transform: rotateY(60deg) translateZ(400px);
+		}
+		section div:nth-child(3) {
+			transform: rotateY(120deg) translateZ(400px);
+		}
+		section div:nth-child(4) {
+			transform: rotateY(180deg) translateZ(400px);
+		}
+		section div:nth-child(5) {
+			transform: rotateY(240deg) translateZ(400px);
+		}
+		section div:nth-child(6) {
+			transform: rotateY(300deg) translateZ(400px);
+		}
+		/*@keyframes zhuan {
+			0% {
+				transform: rotateZ(0);
+			}
+			25% {
+				transform: rotateZ(90deg);
+			}
+			50% {
+				transform: rotateZ(180deg);
+			}
+			75% {
+				transform: rotateZ(270deg);
+			}
+			100% {
+				transform: rotateZ(360deg);
+			}*/
+		}
+	</style>
+</head>
+<body>
+	<section>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+	</section>
+</body>
+</html>
